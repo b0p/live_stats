@@ -8,19 +8,11 @@ TODO:
 
     [] Connect Coveralls / Codeship / Code Climate
 
-    [] Set up MVC
+    [x] Set up MVC
 
     [] Deploy to Heroku
 
-    [] Create index page w/ short bio + quote
-
-    [] Create projects page
-
-    [] Create message submission
-
-    [] Admin Login
-
-    [] Blog?
+    [] Create index page w/ stats
 
 
   CSS:
