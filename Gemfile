@@ -11,8 +11,10 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'foundation-rails', '5.5.3.2'
 gem 'will_paginate'
-gem "paperclip"
-gem 'coveralls', require: false
+gem 'paperclip'
+gem 'omniauth-steam'
+gem 'figaro'
+
 
 group :development, :test do
   gem 'pry-rails'

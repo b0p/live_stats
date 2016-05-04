@@ -25,7 +25,7 @@ TODO:
 
   CSS:
 
-    [] Implement foundation
+    [x] Implement foundation
 
     [] Clean CSS
 

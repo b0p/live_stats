@@ -16,18 +16,36 @@
     <nav class="top-bar" data-topbar role="navigation">
       <ul class="title-area">
         <li class="name">
-          <h1><a href="#">LiveStats</a></h1>
+          <h1 id="website-header"><a id="home-compass" href="/"><strong>LiveStats</strong></a></h1>
         </li>
       </ul>
 
       <section class="top-bar-section">
         <!-- Right Nav Section -->
         <ul class="right">
-          
+          <% if session.key? :user %>
+            <li><a href="#"><%= session[:user]["nickname"] %></a></li>
+            <li><%= image_tag session[:user]["image"], class: 'avatar' %></li>
+            <li><a href="/logout">Logout</a></li>
+          <% else %>
+            <li><%= link_to image_tag("http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_small.png"), '/auth/steam' %></li>
+          <% end %>
         </ul>
       </nav>
 
     <%= yield %>
     <%= javascript_include_tag "application" %>
   </body>
+  
+  <footer>
+    <div class="text-center" id="footer-bg">
+      <br>
+      <div class="inline">
+        <a href="http://steampowered.com" id="steampowered">Powered by Steam.</a>
+      </div>
+      <div class="inline">
+        <p id="credit">Created by <a href="https://steamcommunity.com/id/cantstoptheb0p" style="color: #cccccc">b0p</a></p>
+      </div>
+    </div>
+  </footer>
 </html>
