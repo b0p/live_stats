@@ -7,7 +7,7 @@ class AuthController < ApplicationController
     session[:user] = { :nickname => auth.info['nickname'],
                        :image => auth.info['image'],
                        :uid => auth.uid }
-
+    
     redirect_to root_url
   end
 
