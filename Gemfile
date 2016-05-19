@@ -14,6 +14,7 @@ gem 'will_paginate'
 gem 'paperclip'
 gem 'omniauth-steam'
 gem 'figaro'
+gem 'coveralls', require: false
 
 
 group :development, :test do
