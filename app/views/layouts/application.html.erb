@@ -24,7 +24,7 @@
         <!-- Right Nav Section -->
         <ul class="right">
           <% if session.key? :user %>
-            <li><a href="#"><%= session[:user]["nickname"] %></a></li>
+            <li><a href="/profile"><%= session[:user]["nickname"] %></a></li>
             <li><%= image_tag session[:user]["image"], class: 'avatar' %></li>
             <li><a href="/logout">Logout</a></li>
           <% else %>
@@ -32,11 +32,12 @@
           <% end %>
         </ul>
       </nav>
-
+    </br></br>
     <%= yield %>
+    </br></br>
     <%= javascript_include_tag "application" %>
   </body>
-  
+
   <footer>
     <div class="text-center" id="footer-bg">
       <br>
@@ -44,7 +45,7 @@
         <a href="http://steampowered.com" id="steampowered">Powered by Steam.</a>
       </div>
       <div class="inline">
-        <p id="credit">Created by <a href="https://steamcommunity.com/id/cantstoptheb0p" style="color: #cccccc">b0p</a></p>
+        <p id="credit">Created by <a href="https://steamcommunity.com/id/cantstoptheb0p" style="color: #cccccc">b0p.</a></p>
       </div>
     </div>
   </footer>

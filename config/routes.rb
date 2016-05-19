@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   root "stats#index"
   post 'auth/steam/callback' => 'auth#auth_callback'
   get 'logout' => 'auth#logout'
+  get 'profile' => 'stats#profile'
 end

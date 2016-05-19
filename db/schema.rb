@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20160504211833) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "user_stats", force: :cascade do |t|
+  create_table "stats", force: :cascade do |t|
     t.string "nickname"
     t.string "steamid"
     t.string "total_kills"

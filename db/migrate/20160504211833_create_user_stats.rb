@@ -1,6 +1,6 @@
 class CreateUserStats < ActiveRecord::Migration
   def change
-    create_table :user_stats do |t|
+    create_table :stats do |t|
       t.string :nickname
       t.string :steamid
       t.string :total_kills
