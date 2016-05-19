@@ -1,7 +1,7 @@
 ##Quake Live Stats
-![Build Status](https://codeship.com/projects/96e654a0-b330-0133-a4d7-1a30591bad79/status?branch=master)
-![Code Climate](https://codeclimate.com/github/b0p/my_site.png)
-[![Coverage Status](https://coveralls.io/repos/github/b0p/my_site/badge.svg?branch=master)](https://coveralls.io/github/b0p/my_site?branch=master)
+![Build Status](https://codeship.com/projects/6f9dea10-0047-0134-c110-1e95689fe79f/status?branch=master)
+![Code Climate](https://codeclimate.com/github/b0p/live_stats.png)
+[![Coverage Status](https://coveralls.io/repos/github/b0p/live_stats/badge.svg?branch=master)](https://coveralls.io/github/b0p/live_stats?branch=master)
 
 
 A stats website for popular online shooter Quake Live.
