@@ -40,7 +40,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -53,7 +53,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -68,7 +68,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -81,7 +81,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -94,7 +94,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -107,7 +107,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -122,7 +122,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -135,7 +135,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -148,7 +148,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -161,7 +161,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -176,7 +176,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -189,7 +189,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -202,7 +202,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -215,7 +215,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -230,7 +230,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -243,7 +243,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -256,7 +256,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -269,7 +269,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -284,7 +284,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -297,7 +297,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -310,7 +310,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -323,7 +323,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -338,7 +338,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -351,7 +351,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -364,7 +364,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -377,7 +377,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -392,7 +392,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -405,7 +405,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -418,7 +418,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -431,7 +431,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -446,7 +446,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -459,7 +459,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -472,7 +472,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -485,7 +485,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -500,7 +500,7 @@ module StatsSchema
           return stat["value"]
         end
       end
-      if flag == 0
+      if flag != 1
         return 0
       end
     end
@@ -643,6 +643,60 @@ module StatsSchema
       flag = 0
       @stats["playerstats"]["stats"].each do |stat|
         if stat.has_value?("mod_chaingun")
+          flag = 1
+          return stat["value"]
+        end
+      end
+      if flag != 1
+        return 0
+      end
+    end
+
+    #PROXIMITY
+
+    def proxmine_kills
+      flag = 0
+      @stats["playerstats"]["stats"].each do |stat|
+        if stat.has_value?("kill_proxmine")
+          flag = 1
+          return stat["value"]
+        end
+      end
+      if flag != 1
+        return 0
+      end
+    end
+
+    def proxmine_hits
+      flag = 0
+      @stats["playerstats"]["stats"].each do |stat|
+        if stat.has_value?("hits_proxmine")
+          flag = 1
+          return stat["value"]
+        end
+      end
+      if flag != 1
+        return 0
+      end
+    end
+
+    def proxmine_shots
+      flag = 0
+      @stats["playerstats"]["stats"].each do |stat|
+        if stat.has_value?("shots_proxmine")
+          flag = 1
+          return stat["value"]
+        end
+      end
+      if flag != 1
+        return 0
+      end
+    end
+
+    def proxmine_deaths
+      flag = 0
+      @stats["playerstats"]["stats"].each do |stat|
+        if stat.has_value?("mod_proxmine")
           flag = 1
           return stat["value"]
         end

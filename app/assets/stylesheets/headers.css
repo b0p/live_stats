@@ -1,4 +1,84 @@
 #profile-header {
   padding-top: 17px;
-  padding-left: 50px;
+  padding-left: 40px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+
+#gauntlet-header {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  display: inline-block;
+}
+
+#machinegun-header {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  display: inline-block;
+}
+
+#shotgun-header {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  display: inline-block;
+}
+
+#grenade-header {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  display: inline-block;
+}
+
+#rocket-header {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  display: inline-block;
+}
+
+#lightning-header {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  display: inline-block;
+}
+
+#railgun-header {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  display: inline-block;
+}
+
+#plasma-header {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  display: inline-block;
+}
+
+#hmg-header {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  display: inline-block;
+}
+
+#bfg-header {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  display: inline-block;
+}
+
+#nailgun-header {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  display: inline-block;
+}
+
+#chaingun-header {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  display: inline-block;
+}
+
+#proxmine-header {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  display: inline-block;
 }

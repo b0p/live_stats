@@ -1,14 +1,305 @@
-<div class="row">
-  <div class="small-6 small-centered columns" id="profile-header-box">
-      <h2 class="text-center" id="profile-header"><%= @nickname %>'s Stats</h2>
-      <%= image_tag session[:user]["image"], class: 'profile-avatar' %>
+<% if user_is_logged_in? %>
+
+  <div class="row">
+    <div class="small-6 small-centered columns" id="profile-header-box">
+        <h2 class="text-center" id="profile-header"><%= @nickname %>'s Stats</h2>
+        <%= image_tag session[:user]["image"], class: 'profile-avatar' %>
+    </div>
   </div>
-</div>
 
-</br>
+  </br>
 
-<div class="row">
-  <div class="small-6 small-centered columns" id="profile-stats-box">
+  <% if @stats.class != String %>
 
+    <div class="row">
+      <div class="small-6 columns" id="profile-stats-box">
+        <div class="text-center" id="k-d-chart">
+
+        </div>
+        <div class="text-center" id="profile-total-kills">
+          Total Kills: <%= @stats.total_kills %>
+        </div>
+        <div class="text-center" id="profile-total-deaths">
+          Total Deaths: <%= @stats.total_deaths %>
+        </div>
+        <div class="text-center" id="w-l-chart">
+
+        </div>
+        <div class="text-center" id="profile-wins">
+          Wins: <%= @stats.wins %>
+        </div>
+        <div class="text-center" id="profile-losses">
+          Losses: <%= @stats.losses %>
+        </div>
+        <div class="text-center" id="profile-matches-played">
+          Matches Played: <%= @stats.matches_played %>
+        </div>
+      </div>
+
+      <div class="small-6 columns" id="profile-weapons-box">
+        <div class="text-center" id="gauntlet-header-box">
+          <%= image_tag 'gauntlet.png', size: '25x25', class: 'gauntlet-icon' %>
+          <h3 class="text-center" id="gauntlet-header">Gauntlet</h3>
+        </div>
+        <div class="text-center" id="gauntlet-stats">
+          <div class="text-center" id="profile-gauntlet-kills">
+            Kills: <%= @stats.gauntlet_kills %>
+          </div>
+          <div class="text-center" id="profile-gauntlet-deaths">
+            Deaths: <%= @stats.gauntlet_deaths %>
+          </div>
+        </div>
+
+        <div class="text-center" id="machinegun-header-box">
+          <%= image_tag 'machinegun.png', size: '25x25', class: 'machinegun-icon' %>
+          <h3 class="text-center" id="machinegun-header">Machine Gun</h3>
+        </div>
+        <div class="text-center" id="machinegun-stats">
+          <div class="text-center" id="profile-machinegun-kills">
+            Kills: <%= @stats.machinegun_kills %>
+          </div>
+          <div class="text-center" id="profile-machinegun-hits">
+            Player Hits: <%= @stats.machinegun_hits %>
+          </div>
+          <div class="text-center" id="profile-machinegun-shots">
+            Shots Fired: <%= @stats.machinegun_shots %>
+          </div>
+          <div class="text-center" id="profile-machinegun-deaths">
+            Deaths: <%= @stats.machinegun_deaths %>
+          </div>
+        </div>
+
+        <div class="text-center" id="shotgun-header-box">
+          <%= image_tag 'shotgun.png', size: '25x25', class: 'shotgun-icon' %>
+          <h3 class="text-center" id="shotgun-header">Shotgun</h3>
+        </div>
+        <div class="text-center" id="shotgun-stats">
+          <div class="text-center" id="profile-shotgun-kills">
+            Kills: <%= @stats.shotgun_kills %>
+          </div>
+          <div class="text-center" id="profile-shotgun-hits">
+            Player Hits: <%= @stats.shotgun_hits %>
+          </div>
+          <div class="text-center" id="profile-shotgun-shots">
+            Shots Fired: <%= @stats.shotgun_shots %>
+          </div>
+          <div class="text-center" id="profile-shotgun-deaths">
+            Deaths: <%= @stats.shotgun_deaths %>
+          </div>
+        </div>
+
+        <div class="text-center" id="grenade-header-box">
+          <%= image_tag 'grenade.png', size: '25x25', class: 'grenade-icon' %>
+          <h3 class="text-center" id="grenade-header">Grenade Launcher</h3>
+        </div>
+        <div class="text-center" id="grenade-stats">
+          <div class="text-center" id="profile-grenade-kills">
+            Kills: <%= @stats.grenade_kills %>
+          </div>
+          <div class="text-center" id="profile-grenade-hits">
+            Player Hits: <%= @stats.grenade_hits %>
+          </div>
+          <div class="text-center" id="profile-grenade-shots">
+            Shots Fired: <%= @stats.grenade_shots %>
+          </div>
+          <div class="text-center" id="profile-grenade-deaths">
+            Deaths: <%= @stats.grenade_deaths %>
+          </div>
+        </div>
+
+        <div class="text-center" id="rocket-header-box">
+          <%= image_tag 'rocket.png', size: '25x25', class: 'rocket-icon' %>
+          <h3 class="text-center" id="rocket-header">Rocket Launcher</h3>
+        </div>
+        <div class="text-center" id="rocket-stats">
+          <div class="text-center" id="profile-rocket-kills">
+            Kills: <%= @stats.rocket_kills %>
+          </div>
+          <div class="text-center" id="profile-rocket-hits">
+            Player Hits: <%= @stats.rocket_hits %>
+          </div>
+          <div class="text-center" id="profile-rocket-shots">
+            Shots Fired: <%= @stats.rocket_shots %>
+          </div>
+          <div class="text-center" id="profile-rocket-deaths">
+            Deaths: <%= @stats.rocket_deaths %>
+          </div>
+        </div>
+
+        <div class="text-center" id="lightning-header-box">
+          <%= image_tag 'lightning.png', size: '25x25', class: 'lightning-icon' %>
+          <h3 class="text-center" id="lightning-header">Lightning Gun</h3>
+        </div>
+        <div class="text-center" id="lightning-stats">
+          <div class="text-center" id="profile-lightning-kills">
+            Kills: <%= @stats.lightning_kills %>
+          </div>
+          <div class="text-center" id="profile-lightning-hits">
+            Player Hits: <%= @stats.lightning_hits %>
+          </div>
+          <div class="text-center" id="profile-lightning-shots">
+            Shots Fired: <%= @stats.lightning_shots %>
+          </div>
+          <div class="text-center" id="profile-lightning-deaths">
+            Deaths: <%= @stats.lightning_deaths %>
+          </div>
+        </div>
+
+        <div class="text-center" id="railgun-header-box">
+          <%= image_tag 'railgun.png', size: '25x25', class: 'railgun-icon' %>
+          <h3 class="text-center" id="railgun-header">Railgun</h3>
+        </div>
+        <div class="text-center" id="railgun-stats">
+          <div class="text-center" id="profile-railgun-kills">
+            Kills: <%= @stats.railgun_kills %>
+          </div>
+          <div class="text-center" id="profile-railgun-hits">
+            Player Hits: <%= @stats.railgun_hits %>
+          </div>
+          <div class="text-center" id="profile-railgun-shots">
+            Shots Fired: <%= @stats.railgun_shots %>
+          </div>
+          <div class="text-center" id="profile-railgun-deaths">
+            Deaths: <%= @stats.railgun_deaths %>
+          </div>
+        </div>
+
+        <div class="text-center" id="plasma-header-box">
+          <%= image_tag 'plasma.png', size: '25x25', class: 'plasma-icon' %>
+          <h3 class="text-center" id="railgun-header">Plasma Gun</h3>
+        </div>
+        <div class="text-center" id="plasma-stats">
+          <div class="text-center" id="profile-plasma-kills">
+            Kills: <%= @stats.plasma_kills %>
+          </div>
+          <div class="text-center" id="profile-plasma-hits">
+            Player Hits: <%= @stats.plasma_hits %>
+          </div>
+          <div class="text-center" id="profile-plasma-shots">
+            Shots Fired: <%= @stats.plasma_shots %>
+          </div>
+          <div class="text-center" id="profile-plasma-deaths">
+            Deaths: <%= @stats.plasma_deaths %>
+          </div>
+        </div>
+
+        <div class="text-center" id="hmg-header-box">
+          <%= image_tag 'hmg.png', size: '25x25', class: 'hmg-icon' %>
+          <h3 class="text-center" id="hmg-header">Heavy Machine Gun</h3>
+        </div>
+        <div class="text-center" id="hmg-stats">
+          <div class="text-center" id="profile-hmg-kills">
+            Kills: <%= @stats.hmg_kills %>
+          </div>
+          <div class="text-center" id="profile-hmg-hits">
+            Player Hits: <%= @stats.hmg_hits %>
+          </div>
+          <div class="text-center" id="profile-hmg-shots">
+            Shots Fired: <%= @stats.hmg_shots %>
+          </div>
+          <div class="text-center" id="profile-hmg-deaths">
+            Deaths: <%= @stats.hmg_deaths %>
+          </div>
+        </div>
+
+        <div class="text-center" id="bfg-header-box">
+          <%= image_tag 'bfg.png', size: '25x25', class: 'bfg-icon' %>
+          <h3 class="text-center" id="bfg-header">BFG</h3>
+        </div>
+        <div class="text-center" id="bfg-stats">
+          <div class="text-center" id="profile-bfg-kills">
+            Kills: <%= @stats.bfg_kills %>
+          </div>
+          <div class="text-center" id="profile-bfg-hits">
+            Player Hits: <%= @stats.bfg_hits %>
+          </div>
+          <div class="text-center" id="profile-bfg-shots">
+            Shots Fired: <%= @stats.bfg_shots %>
+          </div>
+          <div class="text-center" id="profile-bfg-deaths">
+            Deaths: <%= @stats.bfg_deaths %>
+          </div>
+        </div>
+
+        <div class="text-center" id="nailgun-header-box">
+          <%= image_tag 'nailgun.png', size: '25x25', class: 'nailgun-icon' %>
+          <h3 class="text-center" id="nailgun-header">Nailgun</h3>
+        </div>
+        <div class="text-center" id="nailgun-stats">
+          <div class="text-center" id="profile-nailgun-kills">
+            Kills: <%= @stats.nailgun_kills %>
+          </div>
+          <div class="text-center" id="profile-nailgun-hits">
+            Player Hits: <%= @stats.nailgun_hits %>
+          </div>
+          <div class="text-center" id="profile-nailgun-shots">
+            Shots Fired: <%= @stats.nailgun_shots %>
+          </div>
+          <div class="text-center" id="profile-nailgun-deaths">
+            Deaths: <%= @stats.nailgun_deaths %>
+          </div>
+        </div>
+
+        <div class="text-center" id="chaingun-header-box">
+          <%= image_tag 'chaingun.png', size: '25x25', class: 'chaingun-icon' %>
+          <h3 class="text-center" id="chaingun-header">Chaingun</h3>
+        </div>
+        <div class="text-center" id="chaingun-stats">
+          <div class="text-center" id="profile-chaingun-kills">
+            Kills: <%= @stats.chaingun_kills %>
+          </div>
+          <div class="text-center" id="profile-chaingun-hits">
+            Player Hits: <%= @stats.chaingun_hits %>
+          </div>
+          <div class="text-center" id="profile-chaingun-shots">
+            Shots Fired: <%= @stats.chaingun_shots %>
+          </div>
+          <div class="text-center" id="profile-chaingun-deaths">
+            Deaths: <%= @stats.chaingun_deaths %>
+          </div>
+        </div>
+
+        <div class="text-center" id="proxmine-header-box">
+          <%= image_tag 'proxmine.png', size: '25x25', class: 'proxmine-icon' %>
+          <h3 class="text-center" id="proxmine-header">Proximity Launcher</h3>
+        </div>
+        <div class="text-center" id="proxmine-stats">
+          <div class="text-center" id="profile-proxmine-kills">
+            Kills: <%= @stats.proxmine_kills %>
+          </div>
+          <div class="text-center" id="profile-proxmine-hits">
+            Player Hits: <%= @stats.proxmine_hits %>
+          </div>
+          <div class="text-center" id="profile-proxmine-shots">
+            Shots Fired: <%= @stats.proxmine_shots %>
+          </div>
+          <div class="text-center" id="profile-proxmine-deaths">
+            Deaths: <%= @stats.proxmine_deaths %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="small-6 columns" id="profile-medals-box">
+
+      </div>
+    </div>
+
+  <% else %>
+
+    <div class="text-center" id="no-stats">
+      </br>
+      <%= @stats %>
+      </br>
+    </div>
+
+  <% end %>
+
+<% else %>
+
+  <div class="text-center">
+    Looks like you blew it... Try going back ya hunk.
   </div>
-</div>
+
+<% end %>

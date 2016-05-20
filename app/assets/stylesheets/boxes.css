@@ -7,9 +7,177 @@
 }
 
 #profile-stats-box {
-  width: 800px;
+  width: 500px;
   min-height: 200px;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #333333;
   border-radius: 25px;
   border: 2px solid #FFFFFF;
+}
+
+#profile-weapons-box {
+  width: 500px;
+  min-height: 200px;
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: #333333;
+  border-radius: 25px;
+  border: 2px solid #FFFFFF;
+}
+
+#profile-medals-box {
+  width: 500px;
+  min-height: 200px;
+  margin-top: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #333333;
+  border-radius: 25px;
+  border: 2px solid #FFFFFF;
+}
+
+#gauntlet-header-box {
+  width: 310px;
+  height: 50px;
+  padding-top: 2px;
+  background-color: #202020;
+  border-radius: 25px;
+  border: 1px solid #FFFFFF;
+  margin:auto;
+  position:relative;
+}
+
+#machinegun-header-box {
+  width: 310px;
+  height: 50px;
+  padding-top: 2px;
+  background-color: #202020;
+  border-radius: 25px;
+  border: 1px solid #FFFFFF;
+  margin:auto;
+  position:relative;
+}
+
+#shotgun-header-box {
+  width: 310px;
+  height: 50px;
+  padding-top: 2px;
+  background-color: #202020;
+  border-radius: 25px;
+  border: 1px solid #FFFFFF;
+  margin:auto;
+  position:relative;
+}
+
+#grenade-header-box {
+  width: 310px;
+  height: 50px;
+  padding-top: 2px;
+  background-color: #202020;
+  border-radius: 25px;
+  border: 1px solid #FFFFFF;
+  margin:auto;
+  position:relative;
+}
+
+#rocket-header-box {
+  width: 310px;
+  height: 50px;
+  padding-top: 2px;
+  background-color: #202020;
+  border-radius: 25px;
+  border: 1px solid #FFFFFF;
+  margin:auto;
+  position:relative;
+}
+
+#lightning-header-box {
+  width: 310px;
+  height: 50px;
+  padding-top: 2px;
+  background-color: #202020;
+  border-radius: 25px;
+  border: 1px solid #FFFFFF;
+  margin:auto;
+  position:relative;
+}
+
+#railgun-header-box {
+  width: 310px;
+  height: 50px;
+  padding-top: 2px;
+  background-color: #202020;
+  border-radius: 25px;
+  border: 1px solid #FFFFFF;
+  margin:auto;
+  position:relative;
+}
+
+#plasma-header-box {
+  width: 310px;
+  height: 50px;
+  padding-top: 2px;
+  background-color: #202020;
+  border-radius: 25px;
+  border: 1px solid #FFFFFF;
+  margin:auto;
+  position:relative;
+}
+
+#hmg-header-box {
+  width: 310px;
+  height: 50px;
+  padding-top: 2px;
+  background-color: #202020;
+  border-radius: 25px;
+  border: 1px solid #FFFFFF;
+  margin:auto;
+  position:relative;
+}
+
+#bfg-header-box {
+  width: 310px;
+  height: 50px;
+  padding-top: 2px;
+  background-color: #202020;
+  border-radius: 25px;
+  border: 1px solid #FFFFFF;
+  margin:auto;
+  position:relative;
+}
+
+#nailgun-header-box {
+  width: 310px;
+  height: 50px;
+  padding-top: 2px;
+  background-color: #202020;
+  border-radius: 25px;
+  border: 1px solid #FFFFFF;
+  margin:auto;
+  position:relative;
+}
+
+#chaingun-header-box {
+  width: 310px;
+  height: 50px;
+  padding-top: 2px;
+  background-color: #202020;
+  border-radius: 25px;
+  border: 1px solid #FFFFFF;
+  margin:auto;
+  position:relative;
+}
+
+#proxmine-header-box {
+  width: 310px;
+  height: 50px;
+  padding-top: 2px;
+  background-color: #202020;
+  border-radius: 25px;
+  border: 1px solid #FFFFFF;
+  margin:auto;
+  position:relative;
 }
