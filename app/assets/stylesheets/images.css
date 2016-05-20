@@ -16,3 +16,94 @@
   border: 2px solid #FFFFFF;
   position: relative;
 }
+
+.gauntlet-icon {
+  display: inline-block;
+  right: 10px;
+  bottom: 5px;
+  position: relative;
+}
+
+.machinegun-icon {
+  display: inline-block;
+  right: 10px;
+  bottom: 5px;
+  position: relative;
+}
+
+.shotgun-icon {
+  display: inline-block;
+  right: 10px;
+  bottom: 5px;
+  position: relative;
+}
+
+.grenade-icon {
+  display: inline-block;
+  right: 10px;
+  bottom: 5px;
+  position: relative;
+}
+
+.rocket-icon {
+  display: inline-block;
+  right: 10px;
+  bottom: 5px;
+  position: relative;
+}
+
+.lightning-icon {
+  display: inline-block;
+  right: 10px;
+  bottom: 5px;
+  position: relative;
+}
+
+.railgun-icon {
+  display: inline-block;
+  right: 10px;
+  bottom: 5px;
+  position: relative;
+}
+
+.plasma-icon {
+  display: inline-block;
+  right: 10px;
+  bottom: 5px;
+  position: relative;
+}
+
+.hmg-icon {
+  display: inline-block;
+  right: 10px;
+  bottom: 5px;
+  position: relative;
+}
+
+.bfg-icon {
+  display: inline-block;
+  right: 10px;
+  bottom: 5px;
+  position: relative;
+}
+
+.nailgun-icon {
+  display: inline-block;
+  right: 10px;
+  bottom: 5px;
+  position: relative;
+}
+
+.chaingun-icon {
+  display: inline-block;
+  right: 10px;
+  bottom: 5px;
+  position: relative;
+}
+
+.proxmine-icon {
+  display: inline-block;
+  right: 10px;
+  bottom: 5px;
+  position: relative;
+}
