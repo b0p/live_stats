@@ -1,2 +1,8 @@
+languages:
+  Ruby: true
+  JavaScript: true
+  PHP: false
+  Python: false
+
 exclude_paths:
 - "lib/stats_schema.rb"
