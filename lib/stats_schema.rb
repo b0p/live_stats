@@ -1,7 +1,6 @@
 require 'net/http'
 require 'json'
 
-
 class StatsSchema
   def initialize(steamid)
     @key = Figaro.env.steam_api_key
