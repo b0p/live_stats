@@ -21,4 +21,6 @@
    display: inline-block;
  }
 
- 
+ .row {
+    max-width: 1100px;
+}
