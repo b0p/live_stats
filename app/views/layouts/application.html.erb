@@ -20,17 +20,21 @@
         <li class="name">
           <h1 id="website-header"><a id="home-compass" href="/"><strong>LiveStats</strong></a></h1>
         </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
       </ul>
 
       <section class="top-bar-section">
         <!-- Right Nav Section -->
         <ul class="right">
+          <li class="has-dropdown">
           <% if session.key? :user %>
-            <li><a href="/profile"><%= session[:user]["nickname"] %></a></li>
-            <li><%= image_tag session[:user]["image"], class: 'avatar' %></li>
-            <li><a href="/logout">Logout</a></li>
+            <li class="divider"></li>
+            <li class="text-center"><a href="/profile"><%= session[:user]["nickname"] %><%= image_tag session[:user]["image"], class: 'avatar' %></a></li>
+            <li class="divider"></li>
+            <li class="text-center"><a href="/logout">Logout</a></li>
+            <li class="divider"></li>
           <% else %>
-            <li><%= link_to image_tag("http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_small.png"), '/auth/steam' %></li>
+            <li class="text-center"><%= link_to image_tag("http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_small.png"), '/auth/steam' %></li>
           <% end %>
         </ul>
       </nav>
