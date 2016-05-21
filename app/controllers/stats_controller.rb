@@ -1,5 +1,6 @@
+require 'stats_schema'
+
 class StatsController < ApplicationController
-  include StatsSchema
 
   def index
     if user_is_logged_in?
