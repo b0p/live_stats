@@ -41,7 +41,7 @@
 
 .grenade-icon {
   display: inline-block;
-  right: 10px;
+  right: 5px;
   bottom: 5px;
   position: relative;
 }
@@ -76,14 +76,14 @@
 
 .hmg-icon {
   display: inline-block;
-  right: 10px;
+  right: 5px;
   bottom: 5px;
   position: relative;
 }
 
 .bfg-icon {
   display: inline-block;
-  right: 10px;
+  right: 5px;
   bottom: 5px;
   position: relative;
 }
@@ -104,7 +104,87 @@
 
 .proxmine-icon {
   display: inline-block;
-  right: 10px;
+  right: 5px;
   bottom: 5px;
   position: relative;
+}
+
+#firstfrag-medal {
+  border-radius: 30px;
+  border: 2px solid #FFFFFF;
+}
+
+#humiliation-medal {
+  border-radius: 30px;
+  border: 2px solid #FFFFFF;
+}
+
+#excellent-medal {
+  border-radius: 30px;
+  border: 2px solid #FFFFFF;
+}
+
+#revenge-medal {
+  border-radius: 30px;
+  border: 2px solid #FFFFFF;
+}
+
+#combo-medal {
+  border-radius: 30px;
+  border: 2px solid #FFFFFF;
+}
+
+#midair-medal {
+  border-radius: 30px;
+  border: 2px solid #FFFFFF;
+}
+
+#perforated-medal {
+  border-radius: 30px;
+  border: 2px solid #FFFFFF;
+}
+
+#rampage-medal {
+  border-radius: 30px;
+  border: 2px solid #FFFFFF;
+}
+
+#impressive-medal {
+  border-radius: 30px;
+  border: 2px solid #FFFFFF;
+}
+
+#capture-medal {
+  border-radius: 30px;
+  border: 2px solid #FFFFFF;
+}
+
+#assist-medal {
+  border-radius: 30px;
+  border: 2px solid #FFFFFF;
+}
+
+#defense-medal {
+  border-radius: 30px;
+  border: 2px solid #FFFFFF;
+}
+
+#headshot-medal {
+  border-radius: 30px;
+  border: 2px solid #FFFFFF;
+}
+
+#quadgod-medal {
+  border-radius: 30px;
+  border: 2px solid #FFFFFF;
+}
+
+#perfect-medal {
+  border-radius: 30px;
+  border: 2px solid #FFFFFF;
+}
+
+#accuracy-medal {
+  border-radius: 30px;
+  border: 2px solid #FFFFFF;
 }
