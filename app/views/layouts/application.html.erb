@@ -6,6 +6,8 @@
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Kanit:600italic' rel='stylesheet' type='text/css'>
 
+    <%= favicon_link_tag 'favicon.ico' %>
+
     <title><%= content_for?(:title) ? yield(:title) : "LiveStats: Quake Live Stat Hub" %></title>
 
     <%= stylesheet_link_tag    "application" %>
@@ -18,7 +20,7 @@
       <nav class="top-bar" data-topbar role="navigation">
         <ul class="title-area">
           <li class="name">
-            <h1 id="website-header"><a id="home-compass" href="/"><strong>LiveStats</strong></a></h1>
+            <h1 id="website-header"><a id="home-compass" href="/"><strong style="color:#751919">Live</strong><strong>Stats</strong></a></h1>
           </li>
           <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
         </ul>
@@ -29,9 +31,9 @@
             <li class="has-dropdown">
             <% if session.key? :user %>
               <li class="divider"></li>
-              <li class="text-center"><a href="/profile"><%= session[:user]["nickname"] %><%= image_tag session[:user]["image"], class: 'avatar' %></a></li>
+              <li class="text-center"><a href="/profile" id="profile-link-text"><%= session[:user]["nickname"] %><%= image_tag session[:user]["image"], class: 'avatar' %></a></li>
               <li class="divider"></li>
-              <li class="text-center"><a href="/logout">Logout</a></li>
+              <li class="text-center"><a href="/logout" id="logout-link-text">Logout</a></li>
               <li class="divider"></li>
             <% else %>
               <li class="text-center"><%= link_to image_tag("http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_small.png"), '/auth/steam' %></li>
