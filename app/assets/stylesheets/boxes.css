@@ -1,3 +1,15 @@
+#leaderboard-box {
+  max-width: 500px;
+  min-height: 500px;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #333333;
+  border-radius: 25px;
+  border: 2px solid #FFFFFF;
+}
+
+
 #profile-header-box {
   max-width: 500px;
   height: 100px;
@@ -27,8 +39,8 @@
   max-width: 500px;
   min-height: 200px;
   margin-top: 10px;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-top: 45px;
+  padding-bottom: 45px;
   background-color: #333333;
   border-radius: 25px;
   border: 2px solid #FFFFFF;

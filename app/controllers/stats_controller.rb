@@ -21,21 +21,25 @@ class StatsController < ApplicationController
 
   def getStats(steamid)
     @nickname = session[:user]["nickname"]
-    
+
     begin
       userStats = StatsSchema.new(steamid)
 
       if userStats.stats_exist?
-        @Stat = Stat.new(nickname: @nickname,
-                         steamid: steamid,
-                         total_kills: userStats.total_kills,
-                         total_deaths: userStats.total_deaths,
-                         wins: userStats.wins,
-                         losses: userStats.losses,
-                         matches_played: userStats.matches_played)
-        @Stat.save
+        if Stat.exists?(steamid: steamid)
+          return userStats
+        else
+          @Stat = Stat.new(nickname: @nickname,
+                           steamid: steamid,
+                           total_kills: userStats.total_kills,
+                           total_deaths: userStats.total_deaths,
+                           wins: userStats.wins,
+                           losses: userStats.losses,
+                           matches_played: userStats.matches_played)
+          @Stat.save
 
-        return userStats
+          return userStats
+        end
       else
         return "No stats available for this user."
       end
