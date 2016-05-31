@@ -6,6 +6,12 @@
   border: 2px solid #FFFFFF;
 }
 
+@media only screen and (max-device-width: 480px) {
+  #profile-header-box {
+    padding-top: 10px;
+  }
+}
+
 #profile-stats-box {
   max-width: 500px;
   min-height: 200px;
