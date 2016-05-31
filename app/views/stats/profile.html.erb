@@ -1,7 +1,7 @@
 <% if user_is_logged_in? %>
 
   <div class="row">
-    <div class="small-6 small-centered columns" id="profile-header-box">
+    <div class="small-12 small-centered columns" id="profile-header-box">
         <h2 class="text-center" id="profile-header"><%= @nickname %>'s Stats</h2>
         <%= image_tag session[:user]["image"], class: 'profile-avatar' %>
     </div>
