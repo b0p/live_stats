@@ -21,21 +21,33 @@ class StatsController < ApplicationController
 
   def getStats(steamid)
     @nickname = session[:user]["nickname"]
-    userStats = StatsSchema.new(steamid)
+    
+    begin
+      userStats = StatsSchema.new(steamid)
 
-    if userStats.stats_exist?
-      @Stat = Stat.new(nickname: @nickname,
-                       steamid: steamid,
-                       total_kills: userStats.total_kills,
-                       total_deaths: userStats.total_deaths,
-                       wins: userStats.wins,
-                       losses: userStats.losses,
-                       matches_played: userStats.matches_played)
-      @Stat.save
+      if userStats.stats_exist?
+        @Stat = Stat.new(nickname: @nickname,
+                         steamid: steamid,
+                         total_kills: userStats.total_kills,
+                         total_deaths: userStats.total_deaths,
+                         wins: userStats.wins,
+                         losses: userStats.losses,
+                         matches_played: userStats.matches_played)
+        @Stat.save
 
-      return userStats
-    else
-      return "No stats available for this user."
+        return userStats
+      else
+        return "No stats available for this user."
+      end
+    rescue SocketError => e
+      render_steam_down
+    end
+  end
+
+  def render_steam_down
+    respond_to do |format|
+      format.html { render template: 'errors/no_steam', status: 404 }
+      format.all { render nothing: true, status: 404 }
     end
   end
 end

@@ -9,6 +9,11 @@
   position: relative;
 }
 
+.frown-image {
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
 .profile-avatar {
   display: inline-block;
   bottom: 65px;
