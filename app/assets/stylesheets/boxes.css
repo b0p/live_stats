@@ -16,6 +16,16 @@
   margin: auto;
 }
 
+@media only screen and (max-device-width: 480px) {
+  #kd-leaderboard-header-box {
+    width: 200px;
+  }
+
+  #wl-leaderboard-header-box {
+    width: 200px;
+  }
+}
+
 #kd-leaderboard-box {
   max-width: 500px;
   max-height: 500px;
