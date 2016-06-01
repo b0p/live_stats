@@ -1,35 +1,42 @@
 <div class="row">
-  <div class="small-12 medium-6 medium-centered columns">
-    <div class="text-center" id="leaderboard-box">
+  <div class="small-12 medium-6 columns">
+    <div id="kd-leaderboard-header-box">
+      <h3 class="text-center" id="kd-leaderboard-header">K/D Leaderboard</h3>
+    </div>
+    <div class="" id="kd-leaderboard-box">
+      <div id="kd-leaderboard-list-container">
+        <ul class="" id="kd-leaderboard-list">
+          <% @kd_ranks.each do |player| %>
+            <li>
+              <img src="<%= getPlayersum(player.steamid).avatar_large %>" class="leaderboard-image" width="50" height="50" />
+              <h3><%= player.nickname %><h3>
+              <h4>K/D: <strong><%= player.kd %></strong><h4>
+              <h6>Steam ID: <%= player.steamid %><h6>
+            </li>
+          <%end%>
+        </ul>
+      </div>
+    </div>
+    </br>
+  </div>
 
+  <div class="small-12 medium-6 columns">
+    <div id="wl-leaderboard-header-box">
+      <h3 class="text-center" id="wl-leaderboard-header">W/L Leaderboard</h3>
+    </div>
+    <div class="" id="wl-leaderboard-box">
+      <div id="wl-leaderboard-list-container">
+        <ul class="" id="wl-leaderboard-list">
+          <% @wl_ranks.each do |player| %>
+            <li>
+              <img src="<%= getPlayersum(player.steamid).avatar_large %>" class="leaderboard-image" width="50" height="50" />
+              <h3><%= player.nickname %><h3>
+              <h4>W/L: <strong><%= player.wl %></strong><h4>
+              <h6>Steam ID: <%= player.steamid %><h6>
+            </li>
+          <%end%>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
-
-<div>
-  <ul>
-    <li>
-      <img src="http://lorempixum.com/100/100/nature/1" >
-      <h3>The Grasslands</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
-    </li>
-
-    <li>
-      <img src="http://lorempixum.com/100/100/nature/2" >
-      <h3>Paradise Found</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
-    </li>
-
-    <li>
-      <img src="http://lorempixum.com/100/100/nature/3" >
-      <h3>Smoke On The Water</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
-    </li>
-
-    <li>
-      <img src="http://lorempixum.com/100/100/nature/4" >
-      <h3>Headline</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
-    </li>
-  </ul>
 </div>

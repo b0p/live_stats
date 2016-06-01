@@ -1,12 +1,37 @@
-#leaderboard-box {
+#kd-leaderboard-header-box {
+  width: 350px;
+  height: 60px;
+  background-color: #333333;
+  border-radius: 25px 25px 0 0;
+  border: 2px solid #660000;
+  margin: auto;
+}
+
+#wl-leaderboard-header-box {
+  width: 350px;
+  height: 60px;
+  background-color: #333333;
+  border-radius: 25px 25px 0 0;
+  border: 2px solid #660000;
+  margin: auto;
+}
+
+#kd-leaderboard-box {
   max-width: 500px;
-  min-height: 500px;
-  margin-top: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  max-height: 500px;
   background-color: #333333;
   border-radius: 25px;
   border: 2px solid #FFFFFF;
+  overflow: auto;
+}
+
+#wl-leaderboard-box {
+  max-width: 500px;
+  max-height: 500px;
+  background-color: #333333;
+  border-radius: 25px;
+  border: 2px solid #FFFFFF;
+  overflow-x: auto;
 }
 
 

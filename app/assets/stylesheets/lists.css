@@ -1,0 +1,98 @@
+#kd-leaderboard-list {
+  list-style-type: decimal;
+  list-style-position: inside;
+  width: 495px;
+}
+
+#kd-leaderboard-list h3 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  display: inline;
+}
+
+#kd-leaderboard-list h4 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  float: right;
+  display: inline;
+}
+
+#kd-leaderboard-list h6 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  opacity: 0.6;
+}
+
+#kd-leaderboard-list li {
+  padding: 10px;
+  overflow: auto;
+}
+
+#kd-leaderboard-list li:first-child {
+  border-radius: 23px 23px 0 0;
+}
+
+#kd-leaderboard-list li:last-child {
+  border-radius: 0 0 23px 23px;
+}
+
+
+#kd-leaderboard-list li img {
+
+}
+
+
+#kd-leaderboard-list li:hover {
+  background: #707070;
+  cursor: default;
+}
+
+
+
+
+#wl-leaderboard-list {
+  list-style-type: decimal;
+  list-style-position: inside;
+  width: 495px;
+}
+
+#wl-leaderboard-list h3 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  display: inline;
+}
+
+#wl-leaderboard-list h4 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  float: right;
+  display: inline;
+}
+
+#wl-leaderboard-list h6 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  opacity: 0.6;
+}
+
+#wl-leaderboard-list li {
+  padding: 10px;
+  overflow: auto;
+}
+
+#wl-leaderboard-list li:first-child {
+  border-radius: 23px 23px 0 0;
+}
+
+#wl-leaderboard-list li:last-child {
+  border-radius: 0 0 23px 23px;
+}
+
+#wl-leaderboard-list li img {
+
+}
+
+#wl-leaderboard-list li:hover {
+  background: #707070;
+  cursor: default;
+}

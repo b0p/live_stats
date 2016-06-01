@@ -9,6 +9,11 @@
   position: relative;
 }
 
+.leaderboard-image{
+  border: 2px solid #660000;
+  border-radius: 10px;
+}
+
 .frown-image {
   margin-bottom: 10px;
   margin-left: 20px;

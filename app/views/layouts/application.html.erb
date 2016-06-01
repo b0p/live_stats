@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Kanit:600italic' rel='stylesheet' type='text/css'>
 
@@ -36,6 +36,7 @@
               <li class="text-center"><a href="/logout" id="logout-link-text">Logout</a></li>
               <li class="divider"></li>
             <% else %>
+              <li class="divider"></li>
               <li class="text-center"><%= link_to image_tag("http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_small.png"), '/auth/steam' %></li>
             <% end %>
           </ul>

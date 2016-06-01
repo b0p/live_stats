@@ -11,21 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160531222800) do
+ActiveRecord::Schema.define(version: 20160601022841) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "stats", force: :cascade do |t|
-    t.string  "nickname"
-    t.string  "steamid"
-    t.string  "total_kills"
-    t.string  "total_deaths"
-    t.string  "wins"
-    t.string  "losses"
-    t.string  "matches_played"
-    t.decimal "kd"
-    t.decimal "wl"
+    t.string "nickname"
+    t.string "steamid"
+    t.string "total_kills"
+    t.string "total_deaths"
+    t.string "wins"
+    t.string "losses"
+    t.string "matches_played"
+    t.string "kd"
+    t.string "wl"
   end
 
 end

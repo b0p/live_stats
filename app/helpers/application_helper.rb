@@ -6,4 +6,13 @@ module ApplicationHelper
      return true
    end
  end
+
+ def getPlayersum(steamid)
+   begin
+     userSum = PlayersumSchema.new(steamid)
+     return userSum
+   rescue SocketError => e
+     render_steam_down
+   end
+ end
 end
