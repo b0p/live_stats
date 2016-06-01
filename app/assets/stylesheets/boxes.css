@@ -46,7 +46,7 @@
 
 
 #profile-header-box {
-  max-width: 500px;
+  min-width: 300px;
   height: 100px;
   background-color: #333333;
   border-radius: 25px;

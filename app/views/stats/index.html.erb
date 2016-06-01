@@ -8,10 +8,12 @@
         <ul class="" id="kd-leaderboard-list">
           <% @kd_ranks.each do |player| %>
             <li>
-              <img src="<%= getPlayersum(player.steamid).avatar_large %>" class="leaderboard-image" width="50" height="50" />
-              <h3><%= player.nickname %><h3>
-              <h4>K/D: <strong><%= player.kd %></strong><h4>
-              <h6>Steam ID: <%= player.steamid %><h6>
+              <a href="/stats/<%= player.steamid %>">
+                <img src="<%= getPlayersum(player.steamid).avatar_large %>" class="leaderboard-image" width="50" height="50" />
+                <h3><%= player.nickname %><h3>
+                <h4>K/D: <strong><%= player.kd %></strong><h4>
+                <h6>Steam ID: <%= player.steamid %><h6>
+              </a>
             </li>
           <%end%>
         </ul>
@@ -29,10 +31,12 @@
         <ul class="" id="wl-leaderboard-list">
           <% @wl_ranks.each do |player| %>
             <li>
-              <img src="<%= getPlayersum(player.steamid).avatar_large %>" class="leaderboard-image" width="50" height="50" />
-              <h3><%= player.nickname %><h3>
-              <h4>W/L: <strong><%= player.wl %></strong><h4>
-              <h6>Steam ID: <%= player.steamid %><h6>
+              <a href="/stats/<%= player.steamid %>">
+                <img src="<%= getPlayersum(player.steamid).avatar_large %>" class="leaderboard-image" width="50" height="50" />
+                <h3><%= player.nickname %><h3>
+                <h4>W/L: <strong><%= player.wl %></strong><h4>
+                <h6>Steam ID: <%= player.steamid %><h6>
+              </a>
             </li>
           <%end%>
         </ul>

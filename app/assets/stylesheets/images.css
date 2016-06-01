@@ -22,10 +22,10 @@
 .profile-avatar {
   display: inline-block;
   bottom: 65px;
-  left: 15px;
   border-radius: 10px;
   border: 2px solid #FFFFFF;
   position: relative;
+  float: left;
 }
 
 .gauntlet-icon {

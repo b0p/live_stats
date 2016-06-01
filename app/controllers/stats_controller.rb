@@ -1,5 +1,5 @@
-require 'stats_schema'
 require 'playersum_schema'
+require 'stats_schema'
 
 class StatsController < ApplicationController
   include ActionView::Helpers::NumberHelper
@@ -13,19 +13,14 @@ class StatsController < ApplicationController
     @wl_ranks = Stat.order(wl: :desc)
   end
 
-  def profile
-    if user_is_logged_in?
-      @nickname = session[:user]["nickname"]
-      @steamid = session[:user]["uid"]
-      @stats = getStats(@steamid)
-    end
+  def show
+    @stats = getStats(params[:id])
+    @playerSum = getPlayersum(params[:id])
   end
 
   private
 
   def getStats(steamid)
-    @nickname = session[:user]["nickname"]
-
     begin
       userStats = StatsSchema.new(steamid)
 

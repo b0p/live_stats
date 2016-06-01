@@ -31,7 +31,7 @@
             <li class="has-dropdown">
             <% if session.key? :user %>
               <li class="divider"></li>
-              <li class="text-center"><a href="/profile" id="profile-link-text"><%= session[:user]["nickname"] %><%= image_tag session[:user]["image"], class: 'avatar' %></a></li>
+              <li class="text-center"><a href="/stats/<%= session[:user]["uid"] %>" id="profile-link-text"><%= session[:user]["nickname"] %><%= image_tag session[:user]["image"], class: 'avatar' %></a></li>
               <li class="divider"></li>
               <li class="text-center"><a href="/logout" id="logout-link-text">Logout</a></li>
               <li class="divider"></li>

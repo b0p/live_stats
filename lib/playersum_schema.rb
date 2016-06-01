@@ -8,6 +8,10 @@ class PlayersumSchema
     @playersum = get_playersum(@steamid)
   end
 
+  def nickname
+    @playersum["response"]["players"][0]["personaname"]
+  end
+
   def avatar_small
     if @playersum["response"]["players"][0]["avatar"].nil?
       return "assets/default_image.jpg"
