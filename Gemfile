@@ -14,7 +14,6 @@ gem 'will_paginate'
 gem 'paperclip'
 gem 'omniauth-steam'
 gem 'figaro'
-gem 'redis-objects'
 gem 'coveralls', require: false
 
 
