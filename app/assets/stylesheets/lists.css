@@ -1,7 +1,7 @@
 #kd-leaderboard-list {
   list-style-type: decimal;
   list-style-position: inside;
-  width: 495px;
+  max-width: 495px;
 }
 
 #kd-leaderboard-list h3 {
@@ -53,7 +53,7 @@
 #wl-leaderboard-list {
   list-style-type: decimal;
   list-style-position: inside;
-  width: 495px;
+  max-width: 495px;
 }
 
 #wl-leaderboard-list h3 {
