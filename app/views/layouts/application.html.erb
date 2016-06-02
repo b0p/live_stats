@@ -16,35 +16,37 @@
   </head>
 
   <body>
-    <div class="fixed">
-      <nav class="top-bar" data-topbar role="navigation">
-        <ul class="title-area">
-          <li class="name">
-            <h1 id="website-header"><a id="home-compass" href="/"><strong style="color:#811B1F">Live</strong><strong>Stats</strong></a></h1>
-          </li>
-          <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-        </ul>
-
-        <section class="top-bar-section">
-          <!-- Right Nav Section -->
-          <ul class="right">
-            <li class="has-dropdown">
-            <% if session.key? :user %>
-              <li class="divider"></li>
-              <li class="text-center"><a href="/stats/<%= session[:user]["uid"] %>" id="profile-link-text"><%= session[:user]["nickname"] %><%= image_tag session[:user]["image"], class: 'avatar' %></a></li>
-              <li class="divider"></li>
-              <li class="text-center"><a href="/logout" id="logout-link-text">Logout</a></li>
-              <li class="divider"></li>
-            <% else %>
-              <li class="divider"></li>
-              <li class="text-center"><%= link_to image_tag("http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_small.png"), '/auth/steam' %></li>
-            <% end %>
+    <div class="noselect">
+      <div class="fixed">
+        <nav class="top-bar" data-topbar role="navigation">
+          <ul class="title-area">
+            <li class="name">
+              <h1 id="website-header"><a id="home-compass" href="/"><strong style="color:#811B1F">Live</strong><strong>Stats</strong></a></h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
           </ul>
-        </nav>
-      </div>
-    </br></br>
-    <%= yield %>
-  </br></br></br>
+
+          <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <li class="has-dropdown">
+              <% if session.key? :user %>
+                <li class="divider"></li>
+                <li class="text-center"><a href="/stats/<%= session[:user]["uid"] %>" id="profile-link-text"><%= session[:user]["nickname"] %><%= image_tag session[:user]["image"], class: 'avatar' %></a></li>
+                <li class="divider"></li>
+                <li class="text-center"><a href="/logout" id="logout-link-text">Logout</a></li>
+                <li class="divider"></li>
+              <% else %>
+                <li class="divider"></li>
+                <li class="text-center"><%= link_to image_tag("http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_small.png"), '/auth/steam' %></li>
+              <% end %>
+            </ul>
+          </nav>
+        </div>
+        </br></br>
+        <%= yield %>
+        </br></br></br>
+    </div>
     <%= javascript_include_tag "application" %>
   </body>
 

@@ -23,11 +23,12 @@ class StatsController < ApplicationController
   def getStats(steamid)
     begin
       userStats = StatsSchema.new(steamid)
+      playerSum = PlayersumSchema.new(steamid)
 
       if userStats.stats_exist?
         if Stat.exists?(steamid: steamid)
           Stat.where(steamid: steamid).destroy_all
-          @Stat = Stat.new(nickname: @nickname,
+          @Stat = Stat.new(nickname: playerSum.nickname,
                            steamid: steamid,
                            total_kills: userStats.total_kills,
                            total_deaths: userStats.total_deaths,
@@ -40,7 +41,7 @@ class StatsController < ApplicationController
 
           return userStats
         else
-          @Stat = Stat.new(nickname: @nickname,
+          @Stat = Stat.new(nickname: playerSum.nickname,
                            steamid: steamid,
                            total_kills: userStats.total_kills,
                            total_deaths: userStats.total_deaths,

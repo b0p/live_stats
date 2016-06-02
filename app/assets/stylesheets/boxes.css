@@ -32,7 +32,7 @@
   background-color: #333333;
   border-radius: 25px;
   border: 2px solid #FFFFFF;
-  overflow: auto;
+  overflow-y: scroll;
 }
 
 #wl-leaderboard-box {
@@ -41,7 +41,7 @@
   background-color: #333333;
   border-radius: 25px;
   border: 2px solid #FFFFFF;
-  overflow-x: auto;
+  overflow-y: scroll;
 }
 
 

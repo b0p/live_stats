@@ -26,16 +26,9 @@
 #kd-leaderboard-list li {
   padding: 10px;
   overflow: auto;
+  color: #FFFFFF;
+  border-radius: 23px;
 }
-
-#kd-leaderboard-list li:first-child {
-  border-radius: 23px 23px 0 0;
-}
-
-#kd-leaderboard-list li:last-child {
-  border-radius: 0 0 23px 23px;
-}
-
 
 #kd-leaderboard-list li img {
 
@@ -78,14 +71,8 @@
 #wl-leaderboard-list li {
   padding: 10px;
   overflow: auto;
-}
-
-#wl-leaderboard-list li:first-child {
-  border-radius: 23px 23px 0 0;
-}
-
-#wl-leaderboard-list li:last-child {
-  border-radius: 0 0 23px 23px;
+  color: #FFFFFF;
+  border-radius: 23px;
 }
 
 #wl-leaderboard-list li img {
