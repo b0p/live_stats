@@ -13,7 +13,7 @@ class PlayersumSchema
   end
 
   def avatar_small
-    if @playersum["response"]["players"][0]["avatar"].nil?
+    if @playersum["response"]["players"][0]["avatar"] == ""
       return "assets/default_image.jpg"
     else
       return @playersum["response"]["players"][0]["avatar"]
@@ -21,7 +21,7 @@ class PlayersumSchema
   end
 
   def avatar_medium
-    if @playersum["response"]["players"][0]["avatarmedium"].nil?
+    if @playersum["response"]["players"][0]["avatarmedium"] == ""
       return "assets/default_image.jpg"
     else
       return @playersum["response"]["players"][0]["avatarmedium"]
@@ -29,7 +29,7 @@ class PlayersumSchema
   end
 
   def avatar_large
-    if @playersum["response"]["players"][0]["avatarfull"].nil?
+    if @playersum["response"]["players"][0]["avatarfull"] == ""
       return "assets/default_image.jpg"
     else
       return @playersum["response"]["players"][0]["avatarfull"]

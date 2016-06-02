@@ -7,14 +7,14 @@
       <div id="kd-leaderboard-list-container">
         <ul class="" id="kd-leaderboard-list">
           <% @kd_ranks.each do |player| %>
-            <a href="/stats/<%= player.steamid %>">
-              <li>
+            <li>
+              <a href="/stats/<%= player.steamid %>">
                 <img src="<%= getPlayersum(player.steamid).avatar_medium %>" class="leaderboard-image" width="50" height="50" />
                 <h3><%= player.nickname %><h3>
                 <h4>K/D: <strong><%= player.kd %></strong><h4>
                 <h6>Steam ID: <%= player.steamid %><h6>
-              </li>
-            </a>
+              </a>
+            </li>
           <%end%>
         </ul>
       </div>
@@ -30,14 +30,15 @@
       <div id="wl-leaderboard-list-container">
         <ul class="" id="wl-leaderboard-list">
           <% @wl_ranks.each do |player| %>
-            <a href="/stats/<%= player.steamid %>">
-              <li>
+
+            <li>
+              <a href="/stats/<%= player.steamid %>">
                 <img src="<%= getPlayersum(player.steamid).avatar_medium %>" class="leaderboard-image" width="50" height="50" />
                 <h3><%= player.nickname %><h3>
                 <h4>W/L: <strong><%= player.wl %></strong><h4>
                 <h6>Steam ID: <%= player.steamid %><h6>
-              </li>
-            </a>
+              </a>
+            </li>
           <%end%>
         </ul>
       </div>
