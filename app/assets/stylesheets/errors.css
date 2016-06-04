@@ -12,3 +12,18 @@
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
 }
+
+#private-profile-error {
+
+}
+
+#private-profile-error-message {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+#private-profile-error-subtext {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}

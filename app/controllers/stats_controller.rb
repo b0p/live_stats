@@ -59,6 +59,9 @@ class StatsController < ApplicationController
       end
     rescue SocketError => e
       render_steam_down
+
+    rescue JSON::ParserError => e
+      render_private_error
     end
   end
 
@@ -79,12 +82,5 @@ class StatsController < ApplicationController
         a *= 10
     end
     return num
-  end
-
-  def render_steam_down
-    respond_to do |format|
-      format.html { render template: 'errors/no_steam', status: 404 }
-      format.all { render nothing: true, status: 404 }
-    end
   end
 end
