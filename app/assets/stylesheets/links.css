@@ -6,3 +6,13 @@
 #steampowered:hover {
   color: #999999;
 }
+
+#profile-link {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+
+#logout-link {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
