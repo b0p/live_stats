@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :stats
+  resources :search
 
   root "stats#index"
   post 'auth/steam/callback' => 'auth#auth_callback'
