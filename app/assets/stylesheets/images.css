@@ -29,12 +29,6 @@
   float: left;
 }
 
-@media only screen and (max-device-width: 480px) {
-  .profile-avatar {
-    
-  }
-}
-
 .gauntlet-icon {
   display: inline-block;
   right: 5px;

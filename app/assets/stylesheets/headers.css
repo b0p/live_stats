@@ -23,14 +23,6 @@
   font-weight: 400;
 }
 
-@media only screen and (max-device-width: 480px) {
-  #profile-header {
-    padding-top: 0px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-  }
-}
-
 #gauntlet-header {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
