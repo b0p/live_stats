@@ -31,8 +31,7 @@
 
 @media only screen and (max-device-width: 480px) {
   .profile-avatar {
-    position: relative;
-    margin-top: 15px;
+    
   }
 }
 
