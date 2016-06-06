@@ -3,8 +3,7 @@ class SearchController < ApplicationController
     if valid_search?
       redirect_to "/stats/#{search_params}"
     else
-      flash[:error] = "At least one field must be filled!"
-      render :index
+      render :template => 'search/index'
     end
   end
 
