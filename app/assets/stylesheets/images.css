@@ -22,10 +22,18 @@
 .profile-avatar {
   display: inline-block;
   bottom: 65px;
+  left: 15px;
   border-radius: 10px;
   border: 2px solid #FFFFFF;
   position: relative;
   float: left;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .profile-avatar {
+    position: relative;
+    margin-top: 15px;
+  }
 }
 
 .gauntlet-icon {

@@ -1,8 +1,10 @@
 <div class="row">
-<div class="small-12 medium-6 small-centered medium-centered columns" id="profile-header-box">
-    <h2 class="text-center" id="profile-header"><%= @playerSum.nickname %>'s Stats</h2>
-    <img src="<%= @playerSum.avatar_medium %>" class="profile-avatar" />
-</div>
+  <div style="display:inline;" class="small-12 medium-6 small-centered medium-centered columns">
+    <div id="profile-header-box">
+      <h2 class="text-center" id="profile-header"><%= @playerSum.nickname %>'s Stats</h2>
+      <a href="<%= @playerSum.steam_profile %>"><img src="<%= @playerSum.avatar_medium %>" class="profile-avatar" /></a>
+    </div>
+  </div>
 </div>
 
 <% if @stats.class != String %>

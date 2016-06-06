@@ -18,8 +18,15 @@
 
 #profile-header {
   padding-top: 17px;
+  position: relative;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
+}
+
+@media only screen and (max-device-width: 480px) {
+  #profile-header {
+    padding-top: 23px;
+  }
 }
 
 #gauntlet-header {

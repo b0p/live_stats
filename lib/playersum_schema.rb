@@ -14,6 +14,10 @@ class PlayersumSchema
     @playersum["response"]["players"][0]["personaname"]
   end
 
+  def steam_profile
+    @playersum["response"]["players"][0]["profileurl"]
+  end
+
   def avatar_small
     if @playersum["response"]["players"][0]["avatar"] == ""
       return "assets/default_image.jpg"
