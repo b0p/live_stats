@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160601022841) do
+ActiveRecord::Schema.define(version: 20160607055928) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,5 +27,7 @@ ActiveRecord::Schema.define(version: 20160601022841) do
     t.string "kd"
     t.string "wl"
   end
+
+  add_index "stats", ["steamid"], name: "index_stats_on_steamid", using: :btree
 
 end
