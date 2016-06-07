@@ -1,5 +1,6 @@
 class SearchController < ApplicationController
   def index
+    @stats_count = Stat.distinct.count('steamid')
     if valid_search?
       redirect_to "/stats/#{search_params}"
     else

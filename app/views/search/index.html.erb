@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="small-12 medium-6 small-centered medium-centered columns">
+    <div class="text-center" id="search-page-counter-container">
+      <strong><span id="search-page-counter" data-count="<%=@stats_count%>">0</span></strong>
+      <br>
+      <span id="search-page-counter-text"> unique profiles recorded.</span>
+    </div>
+    <div class="text-center" id="search-bar-container">
+      <%= form_tag search_index_path, method: :get do %>
+        <%= text_field_tag :idSearch, nil, placeholder: "SteamID goes here!", maxlength: 17 %>
+        <%= submit_tag "Get Stats", class: "button", id: "search-page-search-button" %>
+      <% end %>
+    </div>
+  </div>
+</div>

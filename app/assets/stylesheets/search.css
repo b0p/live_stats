@@ -7,6 +7,26 @@
   line-height: 1px;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
+  border-radius: 0 15px 15px 0;
+}
+
+#search-page-search-button{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  border-radius: 15px;
+}
+
+#search-page-counter {
+  font-size: 90px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  color: #961F24;
+}
+
+#search-page-counter-text {
+  font-size: 55px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
 }
 
 #idSearch {

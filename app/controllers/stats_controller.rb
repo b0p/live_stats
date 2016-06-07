@@ -14,8 +14,10 @@ class StatsController < ApplicationController
   end
 
   def show
-    @stats = getStats(params[:id])
-    @playerSum = getPlayersum(params[:id])
+    if params[:id].nil? == false
+      @stats = getStats(params[:id])
+      @playerSum = getPlayersum(params[:id])
+    end
   end
 
   private
