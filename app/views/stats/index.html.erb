@@ -10,9 +10,11 @@
             <a href="/stats/<%= player.steamid %>">
               <li>
                 <img src="<%= getPlayersum(player.steamid).avatar_medium %>" class="leaderboard-image" width="50" height="50" />
-                <h3><%= player.nickname %><h3>
-                <h4>K/D: <strong><%= player.kd %></strong><h4>
-                <h6>Steam ID: <%= player.steamid %><h6>
+                <h3><%= player.nickname %></h3>
+                <div class="leaderboard-list-item-lower">
+                  <h4>K/D: <strong><%= player.kd %></strong><h4>
+                  <h6>Steam ID: <%= player.steamid %><h6>
+                </div>
               </li>
             </a>
           <%end%>
@@ -33,9 +35,11 @@
             <a href="/stats/<%= player.steamid %>">
               <li>
                 <img src="<%= getPlayersum(player.steamid).avatar_medium %>" class="leaderboard-image" width="50" height="50" />
-                <h3><%= player.nickname %><h3>
-                <h4>W/L: <strong><%= player.wl %></strong><h4>
-                <h6>Steam ID: <%= player.steamid %><h6>
+                <h3><%= player.nickname %></h3>
+                <div class="leaderboard-list-item-lower">
+                  <h4>W/L: <strong><%= player.wl %></strong><h4>
+                  <h6>Steam ID: <%= player.steamid %><h6>
+                </div>
               </li>
             </a>
           <%end%>
