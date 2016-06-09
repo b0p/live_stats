@@ -1,0 +1,14 @@
+#kd-chart {
+  width:100%;
+  height:100%;
+  padding-top: 9px;
+  position: relative;
+}
+
+#wl-chart {
+  top: -150px;
+  width:100%;
+  height:100%;
+  padding-bottom: 9px;
+  position: relative;
+}

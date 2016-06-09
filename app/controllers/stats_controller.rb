@@ -17,6 +17,7 @@ class StatsController < ApplicationController
     if params[:id].nil? == false
       @stats = getStats(params[:id])
       @playerSum = getPlayersum(params[:id])
+      @pgStat = Stat.find_by(steamid: params[:id])
     end
   end
 

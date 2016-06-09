@@ -12,18 +12,14 @@
 <div class="row">
   <div class="small-12 medium-6 columns">
     <div id="profile-stats-box">
-      <div class="text-center" id="k-d-chart">
-
-      </div>
+      <div class="text-center" id="kd-chart"></div>
       <div class="text-center" id="profile-total-kills">
         Total Kills: <%= @stats.total_kills %>
       </div>
       <div class="text-center" id="profile-total-deaths">
         Total Deaths: <%= @stats.total_deaths %>
       </div>
-      <div class="text-center" id="w-l-chart">
-
-      </div>
+      <div class="text-center" id="wl-chart"></div>
       <div class="text-center" id="profile-wins">
         Wins: <%= @stats.wins %>
       </div>
@@ -397,7 +393,123 @@
 
 </div> <!-- row end -->
 
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+      $('#kd-chart').highcharts({
+          chart: {
+              plotBackgroundColor: '#333333',
+              backgroundColor: '#333333',
+              margin: [0,0,0,0],
+              spacing: [0,0,0,0],
+              plotShadow: false
+          },
+          title: {
+              text: 'K/D: <%= @pgStat.kd %>',
+              style: {
+                color: 'white',
+              },
+              align: 'center',
+              verticalAlign: 'middle',
+              y: -10
+          },
+          tooltip: {
+              pointFormat: '{point.percentage:.1f}%</b>'
+          },
+          plotOptions: {
+              pie: {
+                  dataLabels: {
+                      enabled: true,
+                      distance: -50,
+                      style: {
+                          fontWeight: 'bold',
+                          color: 'white',
+                          textShadow: '0px 1px 2px black'
+                      }
+                  },
+                  startAngle: -90,
+                  endAngle: 90,
+                  slicedOffset: 0,
+                  size: '100%',
+                  center: [245, 210],
+                  colors: ["#66FF66", "#FF4C4C"],
+                  borderWidth: 0
 
+              }
+          },
+          series: [{
+              type: 'pie',
+              name: 'K/D',
+              innerSize: '50%',
+              data: [
+                  ['Kills',   <%= @stats.total_kills.to_json %>],
+                  ['Deaths',  <%= @stats.total_deaths.to_json %>],
+              ]
+          }],
+          credits: {
+            enabled: false
+          }
+      });
+  });
+</script> <!-- kd chart -->
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+      $('#wl-chart').highcharts({
+          chart: {
+              plotBackgroundColor: '#333333',
+              backgroundColor: '#333333',
+              margin: [0,0,0,0],
+              spacing: [0,0,0,0],
+              plotShadow: false
+          },
+          title: {
+              text: 'W/L: <%= @pgStat.wl %>',
+              style: {
+                color: 'white',
+              },
+              align: 'center',
+              verticalAlign: 'middle',
+              y: -10
+          },
+          tooltip: {
+              pointFormat: '{point.percentage:.1f}%</b>'
+          },
+          plotOptions: {
+              pie: {
+                  dataLabels: {
+                      enabled: true,
+                      distance: -50,
+                      style: {
+                          fontWeight: 'bold',
+                          color: 'white',
+                          textShadow: '0px 1px 2px black'
+                      }
+                  },
+                  startAngle: -90,
+                  endAngle: 90,
+                  slicedOffset: 0,
+                  size: '100%',
+                  center: [245, 220],
+                  colors: ["#66FF66", "#FF4C4C"],
+                  borderWidth: 0
+
+              }
+          },
+          series: [{
+              type: 'pie',
+              name: 'W/L',
+              innerSize: '50%',
+              data: [
+                  ['Wins',   <%= @stats.wins.to_json %>],
+                  ['Losses',   <%= @stats.losses.to_json %>]
+              ]
+          }],
+          credits: {
+            enabled: false
+          }
+      });
+  });
+</script> <!-- wl chart -->
 
 <% else %>
 

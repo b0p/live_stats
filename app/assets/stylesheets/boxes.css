@@ -64,6 +64,7 @@
 #profile-stats-box {
   max-width: 500px;
   min-height: 200px;
+  max-height: 780px;
   margin-top: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -76,8 +77,8 @@
   max-width: 500px;
   min-height: 200px;
   margin-top: 10px;
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 58px;
+  padding-bottom: 68px;
   background-color: #333333;
   border-radius: 25px;
   border: 2px solid #FFFFFF;
