@@ -10,7 +10,6 @@
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
   position: relative;
-  z-index: 2;
 }
 
 #profile-total-deaths {
@@ -20,7 +19,6 @@
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
   position: relative;
-  z-index: 2;
 }
 
 #profile-wins {
