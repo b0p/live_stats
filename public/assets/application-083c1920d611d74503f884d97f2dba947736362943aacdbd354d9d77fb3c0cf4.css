@@ -77,7 +77,7 @@
   max-width: 500px;
   min-height: 200px;
   margin-top: 10px;
-  padding-top: 57px;
+  padding-top: 58px;
   padding-bottom: 68px;
   background-color: #333333;
   border-radius: 25px;
@@ -10403,7 +10403,7 @@ th.hide-for-touch {
 
 #kd-leaderboard-list li:hover {
   background: #707070;
-  cursor: default;
+  cursor: pointer;
 }
 
 
@@ -10712,7 +10712,6 @@ th.hide-for-touch {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
   position: relative;
-  z-index: 2;
 }
 
 #profile-total-deaths {
@@ -10722,7 +10721,6 @@ th.hide-for-touch {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
   position: relative;
-  z-index: 2;
 }
 
 #profile-wins {
