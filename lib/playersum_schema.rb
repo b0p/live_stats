@@ -19,27 +19,15 @@ class PlayersumSchema
   end
 
   def avatar_small
-    if @playersum["response"]["players"][0]["avatar"] == ""
-      return "assets/default_image.jpg"
-    else
-      return @playersum["response"]["players"][0]["avatar"]
-    end
+    return @playersum["response"]["players"][0]["avatar"]
   end
 
   def avatar_medium
-    if @playersum["response"]["players"][0]["avatarmedium"] == ""
-      return "assets/default_image.jpg"
-    else
-      return @playersum["response"]["players"][0]["avatarmedium"]
-    end
+    return @playersum["response"]["players"][0]["avatarmedium"]
   end
 
   def avatar_large
-    if @playersum["response"]["players"][0]["avatarfull"] == ""
-      return "assets/default_image.jpg"
-    else
-      return @playersum["response"]["players"][0]["avatarfull"]
-    end
+    return @playersum["response"]["players"][0]["avatarfull"]
   end
 
   def get_playersum(steamid)

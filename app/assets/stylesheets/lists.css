@@ -91,5 +91,5 @@
 
 #wl-leaderboard-list li:hover {
   background: #707070;
-  cursor: default;
+  cursor: pointer;
 }
