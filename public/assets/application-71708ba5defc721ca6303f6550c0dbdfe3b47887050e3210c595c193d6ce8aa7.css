@@ -10403,7 +10403,7 @@ th.hide-for-touch {
 
 #kd-leaderboard-list li:hover {
   background: #707070;
-  cursor: default;
+  cursor: pointer;
 }
 
 
@@ -10450,7 +10450,7 @@ th.hide-for-touch {
 
 #wl-leaderboard-list li:hover {
   background: #707070;
-  cursor: default;
+  cursor: pointer;
 }
 #firstfrag-medal-container {
   vertical-align: top;
@@ -10712,7 +10712,6 @@ th.hide-for-touch {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
   position: relative;
-  z-index: 2;
 }
 
 #profile-total-deaths {
@@ -10722,7 +10721,6 @@ th.hide-for-touch {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
   position: relative;
-  z-index: 2;
 }
 
 #profile-wins {
