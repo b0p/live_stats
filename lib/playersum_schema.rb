@@ -26,13 +26,13 @@ class PlayersumSchema
     return @playersum["response"]["players"][0]["avatarmedium"]
   end
 
-  def avatar_large
-    return @playersum["response"]["players"][0]["avatarfull"]
-  end
-
   def get_playersum(steamid)
     response = Net::HTTP.get_response(uri(steamid))
-    JSON.parse(response.body)
+    begin
+      JSON.parse(response.body)
+    rescue
+      render_steam_down
+    end
   end
 
   private
